@@ -1,0 +1,29 @@
+{
+  "name": "eighteen73/virtual-pages",
+  "description": "A helper library for creating WordPress custom permalink pages. Based off https://gist.github.com/gmazzap/1efe17a8cb573e19c086",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Eighteen73\\VirtualPages\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "eighteen73/wordpress-coding-standards": "^2.0.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "composer/installers": true
+    }
+  },
+  "scripts": {
+    "test": [
+      "phpcs"
+    ]
+  }
+}
